@@ -1,1 +1,1 @@
-<div align="center"><h3>Open3DSearch: Zero-Shot Precise Retrieval of 3D Shapes Using Text Descriptions</h3></div>
+<div align="center"><h2>Open3DSearch: Zero-Shot Precise Retrieval of 3D Shapes Using Text Descriptions</h2></div>
