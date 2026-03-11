@@ -1,4 +1,4 @@
-<div align="center"><h2>Open3DSearch: Zero-Shot Precise Retrieval of 3D Shapes Using Text Descriptions</h2></div>
+<div align="center"><h1>Open3DSearch: Zero-Shot Precise Retrieval of 3D Shapes Using Text Descriptions</h1></div>
 This repository is the official implementation of <a href="https://dl.acm.org/doi/10.1145/3746027.3755533">Open3DSearch</a>
 <div>
   <h3>Introduction</h3>
