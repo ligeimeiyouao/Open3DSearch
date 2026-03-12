@@ -11,7 +11,7 @@ This repository is the official implementation of <a href="https://dl.acm.org/do
 <div>
   <h2>Installation</h2>
   <p>Create a conda environment and install basic dependencies:</p>
-
+</div>
   ```bash
   conda create -n Open3DSearch python=3.9
   conda activate Open3DSearch
@@ -21,5 +21,3 @@ This repository is the official implementation of <a href="https://dl.acm.org/do
 
   # Install required dependencies
   pip install -r requirements.txt
-
-
