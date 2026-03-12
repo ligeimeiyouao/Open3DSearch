@@ -11,16 +11,15 @@ This repository is the official implementation of <a href="https://dl.acm.org/do
 <div>
   <h2>Installation</h2>
   <p>Create a conda environment and install basic dependencies:</p>
-  ```html
 <pre><code class="language-bash">
 
 conda create -n Open3DSearch python=3.9
 conda activate Open3DSearch
 
-# Install the according versions of torch and torchvision
+Install the according versions of torch and torchvision
 pip install torch==2.2.2+cu118 torchaudio==2.2.2 torchvision==0.17.2 --index-url https://download.pytorch.org/whl/cu118
 
-# Install required dependencies
+Install required dependencies
 pip install -r requirements.txt
 </code></pre>
 </div>
