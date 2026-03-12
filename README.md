@@ -21,7 +21,7 @@ This repository is the official implementation of <a href="https://dl.acm.org/do
 
   # Install required dependencies
   pip install -r requirements.txt
-
+  ```
 
  <h2>DataSet</h2>
  <p>We propose the Uni3D-R dataset, which contains 7,855 3D shapes and 812 carefully curated query texts.<br>
