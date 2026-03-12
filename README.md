@@ -25,5 +25,5 @@ This repository is the official implementation of <a href="https://dl.acm.org/do
 
  <h2>DataSet</h2>
  <p>We propose and employ the Uni3D-R dataset, which contains 7,855 3D shapes and 812 carefully curated query texts.<br>
-  You can download it from <a href="https://huggingface.co/datasets/ligeimeiyouao/Uni3D-R">here</a>, place 3dmodel_query_matches.json into(containing 812 query statements and their corresponding 3D shapes) <pre><code class="language-bash">/data/</code></pre>, and put the npys files together with download_glbs.py into <pre><code class="language-bash">/data_preprocessing/</code></pre>.
+  You can download it from <a href="https://huggingface.co/datasets/ligeimeiyouao/Uni3D-R">here</a>, place 3dmodel_query_matches.json into(containing 812 query statements and their corresponding 3D shapes) `/data/`, and put the npys files together with download_glbs.py into `/data_preprocessing/`.
  </p>
