@@ -23,7 +23,8 @@ This repository is the official implementation of <a href="https://dl.acm.org/do
   pip install -r requirements.txt
   ```  
  <p>Some libraries may need to be installed according to your specific device configuration (e.g., <a href="https://www.dgl.ai/pages/start.html">dgl</a>).</p>
- <h2>DataSets</h2>
+ <h2>DataSets & data preprocessing</h2>
  <p>We propose and employ the Uni3D-R dataset, which contains 7,855 3D shapes and 812 carefully curated query texts.<br>
   You can download it from <a href="https://huggingface.co/datasets/ligeimeiyouao/Uni3D-R">here</a>, place 3dmodel_query_matches.json(containing 812 query statements and their corresponding 3D shapes) together with the npys files into <code style="background: #eee; color: #333;">/data/</code>, and put download_glbs.py into <code style="background: #eee; color: #333;">/data_preprocessing/</code>.
  </p>
+ <p>数据集下载完成后，你需要运行<a href="https://huggingface.co/datasets/ligeimeiyouao/Uni3D-R">download_glbs.py</a>下载glb文件（默认下载到设备根目录的.objaverse文件夹中）。除此之外，我们还提供了三维形状的特征提取代码<a href="https://huggingface.co/datasets/ligeimeiyouao/Uni3D-R">3d_shape_feature_extraction.py</a></p>
