@@ -22,7 +22,7 @@ This repository is the official implementation of <a href="https://dl.acm.org/do
   # Install required dependencies
   pip install -r requirements.txt
   ```  
-
+ <p>Some libraries may need to be installed according to your specific device configuration (e.g., <a href="https://www.dgl.ai/pages/start.html">dgl</a>).</p>
  <h2>DataSets</h2>
  <p>We propose and employ the Uni3D-R dataset, which contains 7,855 3D shapes and 812 carefully curated query texts.<br>
   You can download it from <a href="https://huggingface.co/datasets/ligeimeiyouao/Uni3D-R">here</a>, place 3dmodel_query_matches.json(containing 812 query statements and their corresponding 3D shapes) together with the npys files into <code style="background: #eee; color: #333;">/data/</code>, and put download_glbs.py into <code style="background: #eee; color: #333;">/data_preprocessing/</code>.
