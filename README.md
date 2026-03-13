@@ -8,7 +8,6 @@ This repository is the official implementation of <a href="https://dl.acm.org/do
 <div align="center"><img width="1000" height="500" alt="image" src="https://github.com/ligeimeiyouao/Open3DSearch/blob/main/overview.png" />
 </div>
 
-
   <h2>Installation</h2>
   <p>Create a conda environment and install basic dependencies:</p>
 
