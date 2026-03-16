@@ -24,3 +24,7 @@ This repository is the official implementation of <a href="https://dl.acm.org/do
   You can download it from <a href="https://huggingface.co/datasets/ligeimeiyouao/Uni3D-R">here</a>, place 3dmodel_query_matches.json(containing 812 query statements and their corresponding 3D shapes) together with the npys files into <code style="background: #eee; color: #333;">/data/</code>, and put download_glbs.py into <code style="background: #eee; color: #333;">/data_preprocessing/</code>.
  </p>
  <p>After downloading the dataset, you need to run<a href="https://github.com/ligeimeiyouao/Open3DSearch/blob/main/data_preprocessing/download_glbs.py">download_glbs.py</a>to download the GLB files (by default, they are downloaded to the .objaverse folder in the root directory of the device). In addition, we also provide the 3D shape feature extraction code<a href="https://github.com/ligeimeiyouao/Open3DSearch/blob/main/data_preprocessing/3d_shape_feature_extraction.py">3d_shape_feature_extraction.py</a></p>
+<h2>Quickstart</h2>
+<p>
+  After data preprocessing, you can run <a href="https://github.com/ligeimeiyouao/Open3DSearch/blob/main/main/demo.py"><code style="background: #eee; color: #333;">/main/demo.py</code></a> to test the 3D model retrieval results for custom queries.If you need to predict matching results for multiple queries, please refer to main/run.py.
+</p>
