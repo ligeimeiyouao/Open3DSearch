@@ -17,61 +17,10 @@ import torch.nn.functional as F
 import traceback
 from viewpoint_selection import get_optimal_viewpoint_and_image
 
-
-def write_valid_num_to_txt(file_path, valid_i):
-    with open(file_path, 'w') as file:
-        file.write(str(valid_i))
-
-
-def read_txt_file(file_path):
-    with open(file_path, 'r') as file:
-        data = file.read()
-    return data
-
-
 @torch.no_grad()
 def extract_text_feat(texts, clip_model, ):
     text_tokens = open_clip.tokenizer.tokenize(texts).cuda()
     return clip_model.encode_text(text_tokens)
-
-
-def load_npy(file_path):
-    data = np.load(file_path, allow_pickle=True).item()
-    xyz = data['xyz']
-    xyz[:, [1, 2]] = xyz[:, [2, 1]]
-    rgb = data['rgb']
-    return xyz, rgb
-
-
-def load_batch(directory, npy_lists):
-    XYZ = []
-    RGB = []
-    file_paths = [os.path.join(directory, npy) for npy in npy_lists]
-    with ThreadPoolExecutor() as executor:
-        results = list(executor.map(lambda x: load_npy(x), file_paths))
-    for i, (xyz, rgb) in enumerate(results):
-        XYZ.append(xyz)
-        RGB.append(rgb)
-    XYZ = torch.from_numpy(np.concatenate(XYZ))
-    RGB = torch.from_numpy(np.concatenate(RGB))
-    XYZ = XYZ.view(-1, 10000, 3).float().to(device='cuda')
-    RGB = RGB.view(-1, 10000, 3).float().to(device='cuda')
-    return XYZ, RGB
-
-
-def extract_shape_feats(XYZ, RGB, shape_encoder, backbone):
-    Feat = torch.cat((XYZ, RGB), dim=2)
-    shape_feats = []
-    if backbone == 'PointBERT':
-        with torch.no_grad():
-            for k in range(0, Feat.shape[0], 10):
-                shape_feat = shape_encoder(XYZ[k:k + 10], Feat[k:k + 10])
-                shape_feats.append(shape_feat)
-    else:
-        print('Please specify the correct backbone type!')
-    shape_feats = torch.cat(shape_feats, dim=0)
-    return shape_feats
-
 
 if __name__ == '__main__':
     """
