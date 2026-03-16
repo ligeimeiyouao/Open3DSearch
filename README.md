@@ -28,6 +28,7 @@ This repository is the official implementation of <a href="https://dl.acm.org/do
 <p>
   After data preprocessing, you can run <a href="https://github.com/ligeimeiyouao/Open3DSearch/blob/main/main/demo.py"><code style="background: #eee; color: #333;">/main/demo.py</code></a> to test the 3D model retrieval results for custom queries.If you need to predict matching results for multiple queries, please refer to <a href="https://github.com/ligeimeiyouao/Open3DSearch/blob/main/main/run.py"><code style="background: #eee; color: #333;">/main/run.py</code></a>.
 </p>
+
 ```bash
 python main/demo.py
 ```
